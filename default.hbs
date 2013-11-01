@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/seattle-io.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400" />
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+    {{! Everything else gets inserted here }}
+    {{{body}}}
+
+    <footer class="site-footer">
+        <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a>
+        <div class="inner">
+             <section class="copyright">All content copyright <a href="/">{{@blog.title}}</a> &copy; 2013 &bull; All rights reserved.</section>
+             <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a></section>
+             <p><small>Seattle skyline photo by <a href="http://www.flickr.com/photos/98185064@N00/2360672546/in/photolist-4AB4GN-4Rwo1L-59Txe5-6u6c9L-6u6cs1-6RLSWk-6Y7N1x-7jgUyt-7jkNhw-7pXSPS-7qwbSP-7qwc6a-7vKgCM-8VSU2t-cSXDUj-e4fAts-foqkby-foaPYH-8XMrc8-a9igMn-8oBa8d-dXHt84-aaxVnA-aavFK6-92H48B-fEmV5B-9MfWuP-9VECPz-8cARAP-aav7zB-aav72M-aav7fB-aavLCB-aavKNF-aayvUq-aavJZz-aayzTL-aayxD5-aavHt2-aayyMs-aavJii-aayzAL-gbvQ6B-gbvjtR-8PBm1Y-7y6hgK-bCyqdD-cHDqyh-7y6CdK-7yarPE-9qsMFN" target="_blank">Bryce Edwards</a></small></p>
+        </div>
+    </footer>
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    {{! The main JavaScript file for Casper }}
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+
+</body>
+</html>
